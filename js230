@@ -1,0 +1,34 @@
+// Replace all dots
+// The code provided is supposed replace all the dots . in the specified String str with dashes -
+
+
+// Answer 1 : 
+
+// const replaceDots = function(str) {
+// return str.split('.').join('-')     // to change the dots to a dashes , i used split method to cut them at the dots and join back with  dashes         
+// }
+
+// note : try to learn replace method to solve also
+
+// QUESTION 7:
+
+// Add Length
+// What if we need the length of the words separated by a space to be added at the end of that same word and have it returned as an array?
+
+// Example(Input --> Output)
+
+// "apple ban" --> ["apple 5", "ban 3"]
+// "you will win" -->["you 3", "will 4", "win 3"]
+// Your task is to write a function that takes a String and returns an Array/list with the length of each word added to each element .
+
+// Note: String will have at least one element; words will always be separated by a space.
+
+
+// Answer 1 : 
+// function addLength(str) {
+
+//   return str.split(" ").map(e=>`${e} ${e.length}`)
+
+// }
+
+// Explanation : for this problem the output needed to be an array of the first word and its length. So knowing that , you need to first turn the string to an array with split (" ") , keeping a space in the braket since you are spliting the elements by the space and not by each characer. Then since map creates a new array use map with a template literal and place the new array elements next to its elments lengths in each element 
