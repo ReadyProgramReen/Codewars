@@ -1,0 +1,49 @@
+//Break camelCase
+
+// Question:
+// Complete the solution so that the function will break up camel casing, using a space between words.
+
+
+// Example
+// "camelCasing"  =>  "camel Casing"
+// "identifier"   =>  "identifier"
+// ""             =>  ""
+
+
+
+//P.R.E.P  Parameters, Returns , Examples, Pseudo code
+
+//write a function that breaks up camel casing , with a space between them 
+//given a string n , each capital letter create a space 
+
+//'', empty string 
+//console log 
+//camelCasing // 'camel Casing'
+
+
+// Answer:
+
+function solution(s) {
+    //conditional for empty ''
+   if(s == "") return ''
+  
+  //variable hold the new string 
+  let s1 = ''
+  
+  //for loop for string
+  for(let i=0; i < s.length ;i++){
+  //conditional that checks if the letter is capital
+  if(s[i] == s[i].toUpperCase()){
+  //..add a space in the front of the letter 
+    s1 += ` ${s[i]}`
+    }else{
+      s1 += `${s[i]}`
+    }
+  }
+  return s1
+}
+solution('camCase')// 'cam Case'
+solution('') //''
+solution('camaDanaLama') //'cama Dana Lama'
+
+
