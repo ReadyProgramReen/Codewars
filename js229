@@ -1,0 +1,15 @@
+
+
+// Array Mean
+// Find the mean (average) of a list of numbers in an array.
+// To find the mean (average) of a set of numbers add all of the numbers together and divide by the number of values in the list.
+// Test.assertEquals(findAverage([1]), 1)
+//     Test.assertEquals(findAverage([1, 3, 5, 7]), 4)
+
+
+// Answer 1 : 
+// var findAverage = function (nums) {
+
+// return nums.reduce((a,c)=>a+c,0)/nums.length
+// }
+// explain> the question asked for the mean of the entire array, which required you to add each element and divide it by the length of he array . So i used reduce method (which sums an entire array ) and right after divided that sum by the length of the array.
